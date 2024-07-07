@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const menuItems = [
-  { text: 'sobre', link: '/about' },
-  { text: 'serviços', link: '/services' },
-  { text: 'contato', link: '/contact' },
+  { text: 'sobre', link: '#about' },
+  { text: 'serviços', link: '#services' },
+  { text: 'contato', link: '#contact' },
 ];
 </script>
 
@@ -18,9 +18,9 @@ const menuItems = [
       />
     </section>
     <section class="flex items-center space-x-8">
-      <button v-for="item in menuItems" :href="item.link" class="btn-primary">
+      <a v-for="item in menuItems" :href="item.link" class="btn-primary cursor-pointer">
         {{ item.text }}
-      </button>
+      </a>
     </section>
   </header>
 </template>
