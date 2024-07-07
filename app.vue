@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const limeColor = ref('#CFEF9F');
 const purpleColor = ref('#240D7D');
+const lightPurpleColor = ref('#8446F8');
 </script>
 
 <template>
@@ -16,7 +17,39 @@ const purpleColor = ref('#240D7D');
   background-color: v-bind(limeColor);
 }
 
+.bg-purple {
+  background-color: v-bind(purpleColor);
+}
+
+.bg-light-purple {
+  background-color: v-bind(lightPurpleColor);
+}
+
+.text-lime {
+  color: v-bind(limeColor);
+}
+
 .text-purple {
   color: v-bind(purpleColor);
+}
+
+.text-light-purple {
+  color: v-bind(lightPurpleColor);
+}
+
+.btn-primary {
+  border: 2px solid v-bind(purpleColor);
+  border-radius: 16px;
+  padding: 0 32px;
+  background-color: v-bind(limeColor);
+  color: v-bind(purpleColor);
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+.btn-primary:hover {
+  background-color: v-bind(purpleColor);
+  color: v-bind(limeColor);
 }
 </style>

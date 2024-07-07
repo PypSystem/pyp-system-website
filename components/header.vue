@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const menuItems = [
-  { text: 'Início', link: '/' },
-  { text: 'Sobre', link: '/about' },
-  { text: 'Serviços', link: '/services' },
+  { text: 'sobre', link: '/about' },
+  { text: 'serviços', link: '/services' },
+  { text: 'contato', link: '/contact' },
 ];
 </script>
 
@@ -17,15 +17,10 @@ const menuItems = [
         class="h-16 w-16"
       />
     </section>
-    <section class="flex items-center space-x-10">
-      <a
-        v-for="item in menuItems"
-        :href="item.link"
-        class="text-lg cursor-pointer transition-transform transform hover:scale-105 hover:text-zinc-500 hover:underline"
-      >
+    <section class="flex items-center space-x-8">
+      <button v-for="item in menuItems" :href="item.link" class="btn-primary">
         {{ item.text }}
-      </a>
-      <button class="border">Entrar em contato</button>
+      </button>
     </section>
   </header>
 </template>
