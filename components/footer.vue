@@ -1,9 +1,17 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { scrollToSection } from '@/utils/scroll.js';
+</script>
 
 <template>
   <footer
-    class="py-4 md:px-96 px-8 flex items-center justify-end border-t-2 border-zinc-600"
+    class="bg-light-purple py-4 md:px-96 px-8 flex items-center justify-between text-lime"
   >
-    <h3 class="text-lg font-medium">© Pyp System - 2024</h3>
+    <img
+      src="/icons/logo-pyp-system-white.svg"
+      alt="Pyp System"
+      class="h-12 w-12 cursor-pointer transition-transform transform hover:scale-105"
+      @click.prevent="scrollToSection('banner')"
+    />
+    <p>Direitos Reservados © | Pyp System - 2024</p>
   </footer>
 </template>

@@ -1,29 +1,32 @@
 <script setup lang="ts">
+import { scrollToSection } from '@/utils/scroll.js';
 const menuItems = [
-  { text: 'Início', link: '/' },
-  { text: 'Sobre', link: '/about' },
+  { text: 'sobre', link: 'about' },
+  { text: 'serviços', link: 'services' },
+  { text: 'contato', link: 'contact' },
 ];
 </script>
 
 <template>
   <header
-    class="md:px-96 px-8 py-6 flex items-center justify-between border-b-2 border-zinc-600"
+    class="fixed top-0 left-0 w-full z-20 md:px-80 px-8 py-2 bg-lime text-purple flex items-center justify-between"
   >
     <section class="flex">
       <img
-        src="/icons/logo-pyp-system-white.svg"
+        src="/icons/logo-pyp-system-purple.svg"
         alt="Pyp System"
-        class="h-14 w-14"
+        class="h-16 w-16 cursor-pointer transition-transform transform hover:scale-105"
+        @click.prevent="scrollToSection('banner')"
       />
     </section>
-    <section class="flex items-center space-x-4">
-      <a
+    <section class="flex items-center space-x-8">
+      <button
         v-for="item in menuItems"
-        :href="item.link"
-        class="text-lg cursor-pointer hover:text-zinc-400 transition-transform transform hover:scale-105"
+        @click.prevent="scrollToSection(item.link)"
+        class="btn-primary cursor-pointer"
       >
         {{ item.text }}
-      </a>
+      </button>
     </section>
   </header>
 </template>
