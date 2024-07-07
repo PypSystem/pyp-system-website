@@ -3,5 +3,6 @@
     <Banner />
     <About />
     <Services />
+    <Contact />
   </main>
 </template>

@@ -1,20 +1,57 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import {
+  ChevronDownIcon,
+  CodeBracketIcon,
+  LightBulbIcon,
+  ArrowPathRoundedSquareIcon,
+} from '@heroicons/vue/24/solid';
+import { scrollToSection } from '@/utils/scroll.js';
+const services = [
+  {
+    title: 'Desenvolvimento de Software',
+    description:
+      'Criamos soluções sob medida utilizando as melhores práticas de desenvolvimento.',
+    icon: CodeBracketIcon,
+  },
+  {
+    title: 'Consultoria Tecnológica',
+    description:
+      'Ajudamos a identificar e implementar as tecnologias mais adequadas para o seu negócio.',
+    icon: LightBulbIcon,
+  },
+  {
+    title: 'Automação de CI/CD',
+    description:
+      'Automatizamos processos de integração e entrega contínua para aumentar a eficiência.',
+    icon: ArrowPathRoundedSquareIcon,
+  },
+];
+</script>
 
 <template>
-  <main
+  <section
     id="services"
-    class="md:px-80 px-8 py-48 flex flex-col justify-center w-full min-h-full bg-lime text-zinc-900"
+    class="md:px-80 px-8 py-48 flex flex-col justify-center items-end w-full min-h-full bg-white text-zinc-900"
   >
     <h4>serviços</h4>
     <h2>Serviços que nossa empresa oferece:</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti animi
-      nobis modi quidem exercitationem voluptatem earum et deleniti voluptas
-      adipisci.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-      suscipit.
-    </p>
-  </main>
+    <div class="grid md:grid-cols-3 gap-8 mt-10">
+      <div
+        v-for="service in services"
+        :key="service.title"
+        class="flex flex-col items-center text-center p-6 bg-lime rounded-lg shadow-2xl transition-transform transform hover:scale-105"
+      >
+        <component
+          :is="service.icon"
+          class="h-16 w-16 mb-4 text-light-purple"
+        />
+        <h3 class="mb-2">{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+      </div>
+    </div>
+    <ChevronDownIcon
+      @click="scrollToSection('contact')"
+      class="h-12 w-12 cursor-pointer transition-transform transform hover:scale-110 mx-auto mt-16"
+    />
+  </section>
 </template>
