@@ -12,6 +12,6 @@ import { scrollToSection } from '@/utils/scroll.js';
       class="h-12 w-12 cursor-pointer transition-transform transform hover:scale-105"
       @click.prevent="scrollToSection('banner')"
     />
-    <p>Direitos Reservados © | Pyp System - 2024</p>
+    <p>© Pyp System - 2024</p>
   </footer>
 </template>

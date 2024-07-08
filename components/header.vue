@@ -9,7 +9,7 @@ const menuItems = [
 
 <template>
   <header
-    class="fixed top-0 left-0 w-full z-20 md:px-80 px-8 py-2 bg-lime text-purple flex items-center justify-between"
+    class="fixed top-0 left-0 w-full z-20 md:px-48 lg:px-72 px-8 py-2 bg-lime text-purple flex items-center justify-between"
   >
     <section class="flex">
       <img

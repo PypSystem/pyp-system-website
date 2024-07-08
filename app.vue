@@ -26,6 +26,10 @@ const lightGrayColor = ref('#f5f5f5');
   background-color: v-bind(lightPurpleColor);
 }
 
+.bg-light-gray {
+  background-color: v-bind(lightGrayColor);
+}
+
 .text-lime {
   color: v-bind(limeColor);
 }
@@ -72,21 +76,12 @@ const lightGrayColor = ref('#f5f5f5');
 }
 
 .input-field {
-  margin-top: 0.5rem;
-  padding: 0.75rem;
-  width: 100%;
-  border: 2px solid v-bind(lightGrayColor);
-  border-radius: 0.5rem;
-  @apply focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent;
-}
-
-.input-field {
   color: v-bind(purpleColor);
   margin-top: 0.5rem;
-  padding: 0.75rem;
+  padding: 0.5rem 0.75rem;
   width: 100%;
   border: 1px solid v-bind(lightGrayColor);
-  border-radius: 0.375rem;
+  border-radius: 1.25rem;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease-in-out;
 }
@@ -100,10 +95,10 @@ const lightGrayColor = ref('#f5f5f5');
 .textarea-field {
   color: v-bind(purpleColor);
   margin-top: 0.5rem;
-  padding: 0.75rem;
+  padding: 0.5rem 0.75rem;
   width: 100%;
   border: 1px solid v-bind(lightGrayColor);
-  border-radius: 0.375rem;
+  border-radius: 1.25rem;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease-in-out;
 }
