@@ -17,7 +17,9 @@ function submitForm() {
     class="md:px-48 lg:px-72 px-8 py-48 flex flex-col items-center justify-center w-full min-h-full bg-purple"
   >
     <h4 class="sm:text-3xl text-2xl">contato</h4>
-    <h2 class="sm:text-5xl text-3xl">Entre em contato com a nossa equipe</h2>
+    <h2 class="sm:text-5xl text-3xl text-center">
+      Entre em contato com a nossa equipe
+    </h2>
     <form @submit.prevent="submitForm" class="w-full max-w-lg space-y-4 mt-6">
       <div class="flex flex-col space-y-4">
         <div>
