@@ -6,7 +6,7 @@ const contact = reactive({
   cellphone: '',
 });
 
-function submitForm() {
+function submitForm(id) {
   console.log(contact);
 }
 </script>

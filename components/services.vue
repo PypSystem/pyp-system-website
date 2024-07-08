@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { scrollToSection } from '@/utils/scroll.js';
+import { scrollToSection } from '@/utils/scroll.ts';
 import {
   ChevronDoubleDownIcon,
   CodeBracketIcon,
