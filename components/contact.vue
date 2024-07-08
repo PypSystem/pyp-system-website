@@ -16,8 +16,8 @@ function submitForm() {
     id="contact"
     class="md:px-48 lg:px-72 px-8 py-48 flex flex-col items-center justify-center w-full min-h-full bg-purple"
   >
-    <h4 class="sm:text-3xl text-2xl">contato</h4>
-    <h2 class="sm:text-5xl text-3xl text-center">
+    <h4 class="sm:text-3xl text-2xl font-medium">contato</h4>
+    <h2 class="my-8 sm:text-5xl text-3xl text-center font-bold">
       Entre em contato com a nossa equipe
     </h2>
     <form @submit.prevent="submitForm" class="w-full max-w-lg space-y-4 mt-6">
@@ -67,7 +67,9 @@ function submitForm() {
           required
         ></textarea>
       </div>
-      <button type="submit" class="btn-secundary">Enviar</button>
+      <div class="w-full flex justify-end">
+        <button type="submit" class="btn-secundary">Enviar</button>
+      </div>
     </form>
   </section>
 </template>

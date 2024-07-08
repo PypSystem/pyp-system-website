@@ -11,9 +11,7 @@ const menuItems = [
 
 const isMenuOpen = ref(false);
 
-function toggleMenu() {
-  isMenuOpen.value = !isMenuOpen.value;
-}
+const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
 </script>
 
 <template>
