@@ -5,7 +5,13 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'pt-BR',
       },
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/icons/logo-pyp-system-white.svg' }],
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: '/icons/logo-pyp-system-white.svg',
+        },
+      ],
     },
   },
   devtools: { enabled: true },

@@ -4,7 +4,7 @@ import { scrollToSection } from '@/utils/scroll.js';
 
 <template>
   <footer
-    class="bg-light-purple py-4 md:px-96 px-8 flex items-center justify-between text-lime"
+    class="bg-light-purple py-4 md:px-48 lg:px-72 px-8 flex items-center justify-between text-lime"
   >
     <img
       src="/icons/logo-pyp-system-white.svg"
