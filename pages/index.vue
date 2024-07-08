@@ -3,6 +3,7 @@
     <Banner />
     <About />
     <Services />
+    <Technologies />
     <Contact />
   </main>
 </template>

@@ -1,11 +1,12 @@
 <script setup lang="ts">
+import { scrollToSection } from '@/utils/scroll.js';
 import {
-  ChevronDownIcon,
+  ChevronDoubleDownIcon,
   CodeBracketIcon,
   LightBulbIcon,
   ArrowPathRoundedSquareIcon,
 } from '@heroicons/vue/24/solid';
-import { scrollToSection } from '@/utils/scroll.js';
+
 const services = [
   {
     title: 'Desenvolvimento de Software',
@@ -31,10 +32,12 @@ const services = [
 <template>
   <section
     id="services"
-    class="md:px-80 px-8 py-48 flex flex-col justify-center items-end w-full min-h-full bg-white text-zinc-900"
+    class="md:px-48 lg:px-72 px-8 py-48 flex flex-col justify-center items-end w-full min-h-full bg-white text-zinc-900"
   >
-    <h4>serviços</h4>
-    <h2>Serviços que nossa empresa oferece:</h2>
+    <h4 class="sm:text-3xl text-2xl">serviços</h4>
+    <h2 class="sm:w-2/3 sm:text-5xl text-3xl text-right">
+      Serviços que nossa empresa oferece
+    </h2>
     <div class="grid md:grid-cols-3 gap-8 mt-10">
       <div
         v-for="service in services"
@@ -45,12 +48,12 @@ const services = [
           :is="service.icon"
           class="h-16 w-16 mb-4 text-light-purple"
         />
-        <h3 class="mb-2">{{ service.title }}</h3>
+        <h4 class="mb-2">{{ service.title }}</h4>
         <p>{{ service.description }}</p>
       </div>
     </div>
-    <ChevronDownIcon
-      @click="scrollToSection('contact')"
+    <ChevronDoubleDownIcon
+      @click="scrollToSection('technologies')"
       class="h-12 w-12 cursor-pointer transition-transform transform hover:scale-110 mx-auto mt-16"
     />
   </section>

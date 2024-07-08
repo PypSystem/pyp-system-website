@@ -3,7 +3,7 @@ import {
   BoltIcon,
   TvIcon,
   CodeBracketSquareIcon,
-  ChevronDownIcon,
+  ChevronDoubleDownIcon,
 } from '@heroicons/vue/24/solid';
 import { scrollToSection } from '@/utils/scroll.js';
 </script>
@@ -11,14 +11,14 @@ import { scrollToSection } from '@/utils/scroll.js';
 <template>
   <main
     id="about"
-    class="md:px-80 px-8 py-48 flex flex-col justify-center w-full h-full bg-light-purple"
+    class="md:px-48 lg:px-72 px-8 py-48 flex flex-col justify-center w-full h-full bg-light-purple"
   >
-    <h4>sobre</h4>
-    <h2 class="w-2/3">
+    <h4 class="sm:text-3xl text-2xl">sobre</h4>
+    <h2 class="sm:w-2/3 sm:text-5xl text-3xl">
       Planejamos, desenvolvemos e entregamos o produto ideal para o seu negócio!
     </h2>
     <p class="pt-4">
-      Unimos gestão ágil, design e engenharia de software para criar soluções
+      Unimos gestão ágil, engenharia de software e design para criar soluções
       digitais efetivas que aceleram o crescimento do seu negócio.
     </p>
     <div class="grid md:grid-cols-3 gap-8 pt-20">
@@ -53,7 +53,7 @@ import { scrollToSection } from '@/utils/scroll.js';
         </p>
       </div>
     </div>
-    <ChevronDownIcon
+    <ChevronDoubleDownIcon
       @click="scrollToSection('services')"
       class="h-12 w-12 cursor-pointer transition-transform transform hover:scale-110 mx-auto mt-16"
     />
