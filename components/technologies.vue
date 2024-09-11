@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ChevronDoubleDownIcon } from '@heroicons/vue/24/solid';
-import { scrollToSection } from '@/utils/scroll.js';
+import { scrollToSection } from '@/utils/scroll.ts';
+
 const technologies = [
   {
     name: 'TypeScript',
@@ -46,8 +47,8 @@ const technologies = [
     id="technologies"
     class="md:px-80 px-8 py-48 flex flex-col items-start w-full min-h-full bg-light-purple text-zinc-900"
   >
-    <h4 class="sm:text-3xl text-2xl">tecnologias</h4>
-    <h2 class="sm:w-2/3 sm:text-5xl text-3xl">
+    <h4 class="sm:text-3xl text-2xl font-medium">tecnologias</h4>
+    <h2 class="my-8 sm:w-2/3 sm:text-5xl text-3xl font-bold">
       Tecnologias de ponta que utilizamos
     </h2>
     <div class="grid md:grid-cols-3 gap-16 mt-10 w-full">

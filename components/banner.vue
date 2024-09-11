@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ChevronDoubleDownIcon } from '@heroicons/vue/24/solid';
-import { scrollToSection } from '@/utils/scroll.js';
+import { scrollToSection } from '@/utils/scroll.ts';
 </script>
 
 <template>

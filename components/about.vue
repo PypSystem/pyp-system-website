@@ -5,7 +5,7 @@ import {
   CodeBracketSquareIcon,
   ChevronDoubleDownIcon,
 } from '@heroicons/vue/24/solid';
-import { scrollToSection } from '@/utils/scroll.js';
+import { scrollToSection } from '@/utils/scroll.ts';
 </script>
 
 <template>
@@ -13,8 +13,8 @@ import { scrollToSection } from '@/utils/scroll.js';
     id="about"
     class="md:px-48 lg:px-72 px-8 py-48 flex flex-col justify-center w-full h-full bg-light-purple"
   >
-    <h4 class="sm:text-3xl text-2xl">sobre</h4>
-    <h2 class="sm:w-2/3 sm:text-5xl text-3xl">
+    <h4 class="sm:text-3xl text-2xl font-medium">sobre</h4>
+    <h2 class="my-8 sm:w-2/3 sm:text-5xl text-3xl font-bold">
       Planejamos, desenvolvemos e entregamos o produto ideal para o seu negócio!
     </h2>
     <p class="pt-4">
